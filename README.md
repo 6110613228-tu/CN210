@@ -16,7 +16,7 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 ### CLIP3
 
 ### CLIP4
-พูดถึงการทำงานของคำสั่ง lw <br>[clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
+พูดถึงการทำงานของคำสั่ง lw [clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
 
 ### CLIP5
 
