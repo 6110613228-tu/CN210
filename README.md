@@ -19,7 +19,8 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 พูดถึงการทำงานของคำสั่ง lw [clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
 
 ### CLIP5
-
+พูดถึงการทำงานของคำสั่ง beq [clip5](https://drive.google.com/open?id=1-XlfTLiHj0VFS1AFilVCNCJtwjmj0-P_)
 ### CLIP6
-
+พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งแบบ R-type [clip6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
 ### CLIP7
+ระบบคอมพิวเตอร์แบบ pipelining
