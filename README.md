@@ -31,7 +31,8 @@ op-code   Funct
 |op code|$rs     |$rt    |$rd     |shamt  | func |
 | 6 bits|5 bits |5 bits|5 bits |5 bits |6 bits|
 
- > 000000 00001 00010 00011 000000 100000 
+  000000 00001 00010 00011 000000 100000 
+ 
  `opcode 000000 = คำสั่งแบบ R-type Funt 100000 = ADD นำข้อมูลจาก $1 บวกกับ $2 เเละเก็บไว้ที่ $3 `
 
 2. I-type
