@@ -25,6 +25,7 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
   or      100101  หรือ
   slt     101010  Signed comparison
 ```
+
 โดย R-type มีรูปแบบดังนี้
 
 |R-type |       |      |       |       |      |
@@ -32,25 +33,49 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 |op code|$rs     |$rt    |$rd     |shamt  | func |
 | 6 bits|5 bits |5 bits|5 bits |5 bits |6 bits|
 
+```
+alu &rd, &rs, &rt
+```
+
 ### I-type
-ชุดคำสั่งเกี่ยวกับการจัดการข้อมูล เช่น การดึงข้อมูล การเขียนข้อมูลเป็นต้น
+ชุดคำสั่งเกี่ยวกับการจัดการข้อมูล`Data tranfer` เช่น การดึงข้อมูล การเขียนข้อมูลเป็นต้นเเละยังรวมไปถึง `beq(Branch on Equal)` ด้วย
 ```
   Machine
   opcode   Funct   x = don't care
     lw     xxxxxx  ดึงข้อมูลมาใช้
     sw     xxxxxx  นำข้อมูลไปเก็บ
 ```
+
 โดย I-type มีรูปแบบดังนี้
+
 |I-type|    |   |               |
 |------|----|---|---------------|
 |op code|$rs|&rt|Value or Offset|
 | 6 bits|5 bits|5 bits|16 bits  |
 
-> lw $rt, offset($rs)
+```
+Datatranfer lw $rt, offset($rs)
+            sw $rt, offset($rs)
+
+Branch      beq $rs, $rt, offset
+```
 
 ### J-type
 ชุดคำสั่งเกี่ยวกับการข้ามหรือ`jump`เพื่อย้ายที่อยู่ในการทำงาน
 
+```
+Jump
+Jump&Link
+```
+|J-type|                  |
+|------|------------------|
+|opcode| absolute address |
+|6 bits|      26 bits     |
+
+```
+Jump       j address
+Jump&Link  jal address
+```
 ## ส่งการบ้าน
 
 #### CLIP1
