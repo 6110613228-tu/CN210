@@ -7,14 +7,14 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 
 #### MIPS Instruction format
 ชุดคำสั่งของ MIPS มีสามชนิด
-| type  |31 - 26|25 - 21|20 - 16|15 - 11|10 - 6|5 - 0|
+| type/bits  |31 - 26|25 - 21|20 - 16|15 - 11|10 - 6|5 - 0|
 |-------|-------|-------|-------|-------| ---- |-----|
-|R-type |op code|rs     |rt     |rd     |shamt | func|
-|I-type |op code|rs     |rt     |ims(15 - 0)|
+|R-type |op code|$rs     |$rt     |$rd     |shamt | func|
+|I-type |op code|$rs     |$rt     |ims(15 - 0)|
 |J-type |op code|address(25 - 0)|
 
 
-1. R-type ชุดคำสั่งสำหรับการคำนวนทางตรรกศาสตร์ ทุกคำสั่ง R-type จะใช้ opcode 000000 โดยเเต่ละคำสั่งจะใช้ Function ในการระบุการทำงานของเเต่ละชุดคำสั่ง
+1. R-type ชุดคำสั่งสำหรับการคำนวนทางตรรกศาสตร์ ทุกคำสั่ง R-type จะใช้ `opcode 000000` โดยเเต่ละคำสั่งจะใช้ Function ในการระบุการทำงานของเเต่ละชุดคำสั่ง
 ```
 op-code   Funct
   add     100000  บวก
@@ -24,11 +24,14 @@ op-code   Funct
   slt     101010  Signed comparison
 ```
 โดย R-type มีรูปแบบดังนี้
+
+
 |R-type |       |      |       |       |      |
 |-------|-------|------|-------|-------| ---- |
-|op code|rs     |rt    |rd     |shamt  | func |
+|op code|$rs     |$rt    |$rd     |shamt  | func |
 | 6 bits|5 bits |5 bits|5 bits |5 bits |6 bits|
 
+> 000000 00001 00010 00011 000000 100000 คำสั่งแบบ R-type โดยนำข้อมูลจาก $1 บวกกับ $2 เเละเก็บไว้ที่ $3 
 2. I-type
 3. J-type
 ## ส่งการบ้าน
