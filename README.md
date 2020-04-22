@@ -9,20 +9,20 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 3. J-type
 ## ส่งการบ้าน
 
-### CLIP1
+#### CLIP1
 ในคลิปที่ 1 จะเป็นการพูดถึงการทำงานของชุดคำสั่ง `ADD`
 <br>[clip1]()
 
-### CLIP2
+#### CLIP2
 
-### CLIP3
+#### CLIP3
 
-### CLIP4
+#### CLIP4
 พูดถึงการทำงานของคำสั่ง lw [clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
 
-### CLIP5
+#### CLIP5
 พูดถึงการทำงานของคำสั่ง beq [clip5](https://drive.google.com/open?id=1-XlfTLiHj0VFS1AFilVCNCJtwjmj0-P_)
-### CLIP6
+#### CLIP6
 พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งแบบ R-type [clip6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
-### CLIP7
+#### CLIP7
 ระบบคอมพิวเตอร์แบบ pipelining
