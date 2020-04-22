@@ -9,9 +9,9 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 ชุดคำสั่งของ MIPS มีสามชนิด
 |type/bits|31 - 26|25 - 21|20 - 16|15 - 11|10 - 6|5 - 0|
 |---------|-------|-------|-------|-------| ---- |-----|
-|R-type |op code|$rs      |$rt    |$rd    |shamt | func|
-|I-type |op code|$rs      |$rt    |ims(15 - 0)         |
-|J-type |op code|address(25 - 0)                       |
+|R-type   |op code|$rs    |$rt    |$rd    |shamt | func|
+|I-type   |op code|$rs    |$rt    |ims(15 - 0)         |
+|J-type   |op code|address(25 - 0)                     |
 
 
 1. R-type ชุดคำสั่งสำหรับการคำนวนทางตรรกศาสตร์ ทุกคำสั่ง R-type จะใช้ `opcode 000000` โดยเเต่ละคำสั่งจะใช้ Function ในการระบุการทำงานของเเต่ละชุดคำสั่ง
