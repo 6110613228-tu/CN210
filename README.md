@@ -34,7 +34,7 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 | 6 bits|5 bits |5 bits|5 bits |5 bits |6 bits|
 
 ```
-alu &rd, &rs, &rt
+alu $rd, $rs, $rt
 ```
 
 ### I-type
@@ -82,7 +82,18 @@ Jump&Link  jal address
 
 #### CLIP1
 ในคลิปที่ 1 จะเป็นการพูดถึงการทำงานของชุดคำสั่ง `ADD`
-<br>[clip1]()
+
+```
+ADD &rd, &rs, &rt -> เขียนให้มนุษย์เข้าใจได้ง่าย
+$ -> Register
+```
+
+ADD เป็นชุดคำสั่งแบบ R-type ซึ่งมี `opcode = 000000` และ `Funct = 100000` การทำงานคือนำข้อมูลใน $rs บวกกับ $rt เเละนำผลลัพธ์ที่ได้ไปเก็บไว้ที่ $rd
+
+```
+$rd = $rs + $rt
+```
+
 
 #### CLIP2
 
