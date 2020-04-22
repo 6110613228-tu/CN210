@@ -71,13 +71,13 @@ Jump&Link
 |J-type|                  |
 |------|------------------|
 |opcode| absolute address |
-|6 bits|      26 bits     |
-
+|6 bits|     26 bits      |
 
 ```
 Jump       j address
 Jump&Link  jal address
 ```
+
 ## ส่งการบ้าน
 
 #### CLIP1
