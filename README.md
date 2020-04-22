@@ -17,7 +17,8 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 #### R-type 
 ชุดคำสั่งสำหรับการคำนวนทางตรรกศาสตร์ ทุกคำสั่ง R-type จะใช้ `opcode 000000` โดยเเต่ละคำสั่งจะใช้ Function ในการระบุการทำงานของเเต่ละชุดคำสั่ง
 ```
-op-code   Funct
+ Machine
+ opcode   Funct
   add     100000  บวก
   sub     100010  ลบ
   and     100100  และ
@@ -26,14 +27,30 @@ op-code   Funct
 ```
 โดย R-type มีรูปแบบดังนี้
 
-
 |R-type |       |      |       |       |      |
 |-------|-------|------|-------|-------| ---- |
 |op code|$rs     |$rt    |$rd     |shamt  | func |
 | 6 bits|5 bits |5 bits|5 bits |5 bits |6 bits|
 
-2. I-type
-3. J-type
+### I-type
+ชุดคำสั่งเกี่ยวกับการจัดการข้อมูล เช่น การดึงข้อมูล การเขียนข้อมูลเป็นต้น
+```
+  Machine
+  opcode   Funct   x = don't care
+    lw     xxxxxx  ดึงข้อมูลมาใช้
+    sw     xxxxxx  นำข้อมูลไปเก็บ
+```
+โดย I-type มีรูปแบบดังนี้
+|I-type|    |   |               |
+|------|----|---|---------------|
+|op code|$rs|&rt|Value or Offset|
+| 6 bits|5 bits|5 bits|16 bits  |
+
+> lw $rt, offset($rs)
+
+### J-type
+ชุดคำสั่งเกี่ยวกับการข้ามหรือ`jump`เพื่อย้ายที่อยู่ในการทำงาน
+
 ## ส่งการบ้าน
 
 #### CLIP1
