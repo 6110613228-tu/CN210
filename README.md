@@ -67,10 +67,12 @@ Branch      beq $rs, $rt, offset
 Jump
 Jump&Link
 ```
+
 |J-type|                  |
 |------|------------------|
 |opcode| absolute address |
 |6 bits|      26 bits     |
+
 
 ```
 Jump       j address
