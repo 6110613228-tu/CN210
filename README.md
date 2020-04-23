@@ -131,7 +131,17 @@ bits ที่ 5-0 (6 bits สุดท้าย) คือ Function
 
 #### [CLIP2](https://www.youtube.com/watch?v=EfOSx5m8Fms&feature=youtu.be)
 
-CLIP2 พูดถึงการเปลี่ยนภาษาระดับสูง(ภาษาที่มนุษย์เข้าใจได้ง่าย) เป็นภาษาเครื่อง
+CLIP2 พูดถึงการเปลี่ยนภาษาระดับสูง(ภาษาที่มนุษย์เข้าใจได้ง่าย) เป็นภาษาเครื่องโดยใช้ภาษา Assembly ในการอธิบาย
+
+```java
+class test{
+    public static void main(String[] args){
+        int a = 10;
+        int b = 20;
+        int c = a + b;
+    }
+}
+```
 
 #### [CLIP3](https://www.youtube.com/watch?v=koQ6yo35F8g&feature=youtu.be)
 
