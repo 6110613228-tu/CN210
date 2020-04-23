@@ -80,7 +80,7 @@ Jump&Link  jal address
 
 ## ส่งการบ้าน
 
-#### CLIP1
+#### [CLIP1](https://www.youtube.com/watch?v=RRHZPNz_lzE&feature=youtu.be)
 ในคลิปที่ 1 จะเป็นการพูดถึงการทำงานของชุดคำสั่ง `ADD`
 
 ```
