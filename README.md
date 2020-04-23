@@ -129,9 +129,9 @@ bits ที่ 5-0 (6 bits สุดท้าย) คือ Function
 
 > แปลงเป็นเลขฐาน 16 เพื่อให้มนุษย์สามารถอ่านได้ง่ายขึ้น
 
-#### CLIP2
+#### [CLIP2](https://www.youtube.com/watch?v=EfOSx5m8Fms&feature=youtu.be)
 
-#### CLIP3
+#### [CLIP3](https://www.youtube.com/watch?v=koQ6yo35F8g&feature=youtu.be)
 
 #### CLIP4
 พูดถึงการทำงานของคำสั่ง lw [clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
