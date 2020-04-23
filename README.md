@@ -81,6 +81,9 @@ Jump&Link  jal address
 ```
 คอมพิวเตอร์ไม่สามารถเข้าใจภาษาระดับสูงได้ คอมพิวเตอร์เข้าใจเพียงเลขฐานสองเท่านั้น
 ```
+
+#### ALU Decoder
+
 ## ส่งการบ้าน
 
 #### [CLIP1](https://www.youtube.com/watch?v=RRHZPNz_lzE&feature=youtu.be)
