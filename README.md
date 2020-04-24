@@ -291,6 +291,16 @@ offset = 0000000000000100 (4)
 #### CLIP4
 พูดถึงการทำงานของคำสั่ง lw [clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
 
+![comp-arch-2012-choompol-60](https://user-images.githubusercontent.com/61135042/80243595-b5669400-8691-11ea-8735-fb508d84c4b9.jpg)
+
+![comp-arch-2012-choompol-61](https://user-images.githubusercontent.com/61135042/80243611-bf889280-8691-11ea-855f-2437c9c4cb7a.jpg)
+
+![comp-arch-2012-choompol-62](https://user-images.githubusercontent.com/61135042/80243639-c8796400-8691-11ea-9efa-788932c2fc09.jpg)
+
+![comp-arch-2012-choompol-63](https://user-images.githubusercontent.com/61135042/80243665-d16a3580-8691-11ea-82e3-543df6eb4e2a.jpg)
+
+![comp-arch-2012-choompol-64](https://user-images.githubusercontent.com/61135042/80243679-daf39d80-8691-11ea-8275-9ae80da3ed87.jpg)
+
 #### CLIP5
 พูดถึงการทำงานของคำสั่ง beq [clip5](https://drive.google.com/open?id=1-XlfTLiHj0VFS1AFilVCNCJtwjmj0-P_)
 #### CLIP6
