@@ -271,18 +271,17 @@ offset = 0000000000000100 (4)
 #### [CLIP3](https://www.youtube.com/watch?v=koQ6yo35F8g&feature=youtu.be)
 ความแตกต่างระหว่าง CPU แบบ Multi-cycle และ Single-cycle
 
-CPU แบบ Single-Cycle
+**CPU แบบ Single-Cycle**
 
 ![comp-arch-2012-choompol-49](https://user-images.githubusercontent.com/61135042/80238948-88ae7e80-8689-11ea-8ff9-98edc819121f.jpg)
-
 1. Havard Architecture
 2. Mux 4 units
 3. 1 ALU 2 Add
 4. 2 Memory
 5. Each Instruction ends in 1 Clock-cycle **ทำให้เกิดความล่าช้าเพราะต้องรอให้คำสั่งก่อนหน้าเสร็จเรียบร้อยก่อน**
 
+**CPU แบบ Multi-Cycle**
 ![comp-arch-2012-choompol-60](https://user-images.githubusercontent.com/61135042/80238516-c8289b00-8688-11ea-98b5-533b6f842219.jpg)
-
 1. Voneuman Architecture
 2. Mux 5 units
 3. 1 ALU unit
