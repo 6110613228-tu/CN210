@@ -273,7 +273,7 @@ offset = 0000000000000100 (4)
 
 **CPU แบบ Single-Cycle**
 
-![comp-arch-2012-choompol-49](https://user-images.githubusercontent.com/61135042/80238948-88ae7e80-8689-11ea-8ff9-98edc819121f.jpg)
+![comp-arch-2012-choompol-49](https://user-images.githubusercontent.com/61135042/80242926-653b0200-8690-11ea-846a-03d1d3dcc801.jpg)
 1. Havard Architecture
 2. Mux 4 units
 3. 1 ALU 2 Add
