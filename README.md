@@ -84,9 +84,9 @@ Jump&Link  jal address
 
 #### ALU Decoder
 
-## ส่งการบ้าน
+# ส่งการบ้าน
 
-#### [CLIP1](https://www.youtube.com/watch?v=RRHZPNz_lzE&feature=youtu.be)
+### [CLIP1](https://www.youtube.com/watch?v=RRHZPNz_lzE&feature=youtu.be)
 ในคลิปที่ 1 จะเป็นการพูดถึงการทำงานของชุดคำสั่ง `ADD`
 
 ```
@@ -132,7 +132,7 @@ bits ที่ 5-0 (6 bits สุดท้าย) คือ Function
 
 > แปลงเป็นเลขฐาน 16 เพื่อให้มนุษย์สามารถอ่านได้ง่ายขึ้น
 
-#### [CLIP2](https://www.youtube.com/watch?v=EfOSx5m8Fms&feature=youtu.be)
+### [CLIP2](https://www.youtube.com/watch?v=EfOSx5m8Fms&feature=youtu.be)
 
 CLIP2 พูดถึงการเปลี่ยนภาษาระดับสูง(ภาษาที่มนุษย์เข้าใจได้ง่าย) เป็นภาษาเครื่องโดยใช้ภาษา Assembly ในการอธิบาย
 
@@ -268,7 +268,7 @@ offset = 0000000000000100 (4)
 1A000008:    0000001E    0000 0000 0000 0000 0000 0000 0001 1110    c
 ```
 
-#### [CLIP3](https://www.youtube.com/watch?v=koQ6yo35F8g&feature=youtu.be)
+### [CLIP3](https://www.youtube.com/watch?v=koQ6yo35F8g&feature=youtu.be)
 ความแตกต่างระหว่าง CPU แบบ Multi-cycle และ Single-cycle
 
 **CPU แบบ Single-Cycle**
@@ -287,7 +287,7 @@ offset = 0000000000000100 (4)
 4. 1 Memory
 5. Each Instruction has it's own clock-cycle **ทุกคำสั่งไม่มีการเสียเวลาเกิดขึ้นเพราะใช้เวลาพอดี**
 
-#### [CLIP4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
+### [CLIP4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
 
 พูดถึงขั้นตอนการทำงานของคำสั่ง lw
 
@@ -361,7 +361,7 @@ offset = 0000000000000100 (4)
 
 ในขั้นตอนนี้ ALU จะนำ A - B หาก A - B == 0 เป็นจริง PC ก็จะทำการ Jump ไปตาม Address ที่ ALUOUT ส่งไปให้ก่อนหน้า
 
-#### [CLIP6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
+### [CLIP6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
 
 พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งชนิด R-type
 
@@ -379,5 +379,5 @@ T3 ALUOUT = A op B control unit จึงทำการส่งสัญญา
 T4 ซึ่งเป็นขั้นตอนสุดท้ายเป็นการนำค่าที่ไดเจาก ALU ส่งออกไปเก็บที่ REG[IR[15-11]] จึงมีการส่งสัญญาณ REGWrite = 0 เพื่อให้เขียนข้อมูลจาก ALUOUT ลงไปใน REG MemtoReg = 0 เพื่อส่งค่า ALUOUT ออกมาและ RegDst = 1 เพื่อให้ Mux ส่งค่า %rd เข้าไปใน Reg
 ![comp-arch-2012-choompol-89](https://user-images.githubusercontent.com/61135042/80276770-f5228f80-8714-11ea-9f0a-da05eeb496d9.jpg)
 
-#### CLIP7
+### CLIP7
 ระบบคอมพิวเตอร์แบบ pipelining
