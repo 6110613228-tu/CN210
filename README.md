@@ -365,6 +365,7 @@ offset = 0000000000000100 (4)
 
 พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งชนิด R-type
 
+T1 
 ![comp-arch-2012-choompol-83](https://user-images.githubusercontent.com/61135042/80276745-dcb27500-8714-11ea-8107-c29924b3b26e.jpg)
 
 ![comp-arch-2012-choompol-85](https://user-images.githubusercontent.com/61135042/80276753-e5a34680-8714-11ea-9ad7-2b54b4dad17f.jpg)
