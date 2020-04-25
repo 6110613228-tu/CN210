@@ -368,10 +368,14 @@ offset = 0000000000000100 (4)
 T1 ในขั้นตอนนี้เป็นการรับค่าจาก PC ลงมาเขียนใน IR เเละดึง PC มาบวก 4 เพื่อทำการรอคำสั่งถัดไป control unit จึงทำการส่งสัญญาณ MemRead = 1 , IRWrite = 1 เพื่อให้ IR(Instruction Register) ทำการเขียนข้อมูลลงไป ในขณะเดียวกัน control unit ทำการส่งสัญญาณ ALUSrcA = 0 , ALUSrcB = 1 , ALUOP = ADD เพื่อนำค่าจาก PC เเละให้ Mux ส่งเลข 4 ออกมาเพื่อให้ ALU นำค่าทั้งสองมาบวกกันเป็น Address สำหรับคำสั้งต่อไป
 ![comp-arch-2012-choompol-83](https://user-images.githubusercontent.com/61135042/80276745-dcb27500-8714-11ea-8107-c29924b3b26e.jpg)
 
+T2 เป็นการอ่าน $rs , $rt และนำ Offset + PC control unit จึงทำการส่งสีญญาณ ALUSrcA = 0 , ALUSrcB = 3 เพื่อให้ค่าที่เข้า ALU เป็น PC และ signext << 2 และ ALUOP = 0 เพื่อให้ ALU ทำการบวกเลข
 
+ในขณะเดียวกันก็ทำการอ่าน $rs , $rt เข้าไปใน A , B ตามลำดับ
 ![comp-arch-2012-choompol-85](https://user-images.githubusercontent.com/61135042/80276753-e5a34680-8714-11ea-9ad7-2b54b4dad17f.jpg)
 
+T3 ALUOUT = A op B control unit จึงทำการส่งสัญญาณมาให้ ALUSrcA = 1 เพื่อนำข้อมูลใน A และ ALUSrcB = 0 เพื่อนำข้อมูลใน B เข้า ALU และ ALUOP = 2 เพื่อนำค่าจาก IR[28-26] เข้าไปใช้เช่นกัน
 ![comp-arch-2012-choompol-87](https://user-images.githubusercontent.com/61135042/80276765-edfb8180-8714-11ea-94da-a65e88fd68c2.jpg)
+
 
 ![comp-arch-2012-choompol-89](https://user-images.githubusercontent.com/61135042/80276770-f5228f80-8714-11ea-9f0a-da05eeb496d9.jpg)
 
