@@ -11,8 +11,8 @@ Repository นี้ถูกสร้างขึ้นเพื่อสรุ
 |type/bits|31 - 26|25 - 21|20 - 16|15 - 11|10 - 6|5 - 0|
 |---------|-------|-------|-------|-------|------|-----|
 |R-type   |op code|$rs    |$rt    |$rd    |shamt | func|
-|I-type   |op code|$rs    |$rt    |ims(15 - 0)|
-|J-type   |op code|       |       |address(25 - 0)|
+|I-type   |op code|$rs    |$rt    |ims|
+|J-type   |op code|       |       |address|
 
 #### R-type 
 ชุดคำสั่งสำหรับการคำนวนทางตรรกศาสตร์ ทุกคำสั่ง R-type จะใช้ `opcode 000000` โดยเเต่ละคำสั่งจะใช้ Function ในการระบุการทำงานของเเต่ละชุดคำสั่ง
@@ -365,8 +365,9 @@ offset = 0000000000000100 (4)
 
 พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งชนิด R-type
 
-T1 
+T1 ในขั้นตอนนี้เป็นการรับค่าจาก PC ลงมาเขียนใน IR เเละดึง PC มาบวก 4 เพื่อทำการรอคำสั่งถัดไป control unit จึงทำการส่งสัญญาณ MemRead = 1 , IRWrite = 1 เพื่อให้ IR(Instruction Register) ทำการเขียนข้อมูลลงไป ในขณะเดียวกัน control unit ทำการส่งสัญญาณ ALUSrcA = 0 , ALUSrcB = 1 , ALUOP = ADD เพื่อนำค่าจาก PC เเละให้ Mux ส่งเลข 4 ออกมาเพื่อให้ ALU นำค่าทั้งสองมาบวกกันเป็น Address สำหรับคำสั้งต่อไป
 ![comp-arch-2012-choompol-83](https://user-images.githubusercontent.com/61135042/80276745-dcb27500-8714-11ea-8107-c29924b3b26e.jpg)
+
 
 ![comp-arch-2012-choompol-85](https://user-images.githubusercontent.com/61135042/80276753-e5a34680-8714-11ea-9ad7-2b54b4dad17f.jpg)
 
