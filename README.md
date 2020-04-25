@@ -326,8 +326,34 @@ offset = 0000000000000100 (4)
 ![comp-arch-2012-choompol-64](https://user-images.githubusercontent.com/61135042/80243679-daf39d80-8691-11ea-8275-9ae80da3ed87.jpg)
 ข้อมูลใน MDR จะถูกนำไปเขียนลงใน REG
 
-#### CLIP5
-พูดถึงการทำงานของคำสั่ง beq [clip5](https://drive.google.com/open?id=1-XlfTLiHj0VFS1AFilVCNCJtwjmj0-P_)
+#### [CLIP5](https://drive.google.com/open?id=1-XlfTLiHj0VFS1AFilVCNCJtwjmj0-P_)
+
+พูดถึงการทำงานของคำสั่ง beq
+
+##### T1 : Instruction fetch
+- IR = Memory[PC]
+- PC = PC + 4
+![comp-arch-2012-choompol-60](https://user-images.githubusercontent.com/61135042/80243595-b5669400-8691-11ea-8735-fb508d84c4b9.jpg)
+เป็นการนำชุดคำสั่งมาเก็บไว้ที่ **IR(Instruction Register)** และนำ PC ไปบวก 4 เพื่อดึงชุดคำสั่งถัดไปมารอไว้ที่ PC
+
+##### T2 : Instruction decode / register fetch
+- A = REG[IR[25-21]]
+- B = REG[IR[20-15]]
+- ALUOUT = PC + (sign-extend (IR[15-0] << 2))
+![comp-arch-2012-choompol-61](https://user-images.githubusercontent.com/61135042/80243611-bf889280-8691-11ea-855f-2437c9c4cb7a.jpg)
+ในขั้นตอนนี้ REG จะดึงข้อมูลจาก IR มาใช้งานซึ่งจะถูกแยกเป็นส่วนๆ
+- bits ที่ 31-26 เป็น opcode เราจะไม่สนใจ
+- bits ที่ 25-21 จะถูกอ่านนำไปเก็บไว้ใน A
+- bits ที่ 20-16 จะถูกอ่านและนำไปเก็บไว้ใน B
+- bits ที่ 15-0 จะถูกนำไปเพิ่ม bits(sign extend) เป็น 32 bits เเละ shift ไปทางซ้าย 2 bits จากนั้นจะถูกนำไปบวกกับ PC
+
+#### T3 : Execution , address computation , branch/jump completion
+- if(A==B) then PC = ALUOUT
+
+![comp-arch-2012-choompol-62](https://user-images.githubusercontent.com/61135042/80274333-c9e37480-8703-11ea-87d3-b0d4901cffd0.jpg)
+
+ในขั้นตอนนี้ ALU จะนำ A - B หาก A - B == 0 เป็นจริง PC ก็จะทำการ Jump ไปตาม Address ที่ ALUOUT ส่งไปให้ก่อนหน้า
+
 #### CLIP6
 พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งแบบ R-type [clip6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
 #### CLIP7
