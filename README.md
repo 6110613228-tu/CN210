@@ -376,7 +376,7 @@ T2 เป็นการอ่าน $rs , $rt และนำ Offset + PC contr
 T3 ALUOUT = A op B control unit จึงทำการส่งสัญญาณมาให้ ALUSrcA = 1 เพื่อนำข้อมูลใน A และ ALUSrcB = 0 เพื่อนำข้อมูลใน B เข้า ALU และ ALUOP = 2 เพื่อนำค่าจาก IR[28-26] เข้าไปใช้เช่นกัน
 ![comp-arch-2012-choompol-87](https://user-images.githubusercontent.com/61135042/80276765-edfb8180-8714-11ea-94da-a65e88fd68c2.jpg)
 
-
+T4 ซึ่งเป็นขั้นตอนสุดท้ายเป็นการนำค่าที่ไดเจาก ALU ส่งออกไปเก็บที่ REG[IR[15-11]] จึงมีการส่งสัญญาณ REGWrite = 0 เพื่อให้เขียนข้อมูลจาก ALUOUT ลงไปใน REG MemtoReg = 0 เพื่อส่งค่า ALUOUT ออกมาและ RegDst = 1 เพื่อให้ Mux ส่งค่า %rd เข้าไปใน Reg
 ![comp-arch-2012-choompol-89](https://user-images.githubusercontent.com/61135042/80276770-f5228f80-8714-11ea-9f0a-da05eeb496d9.jpg)
 
 #### CLIP7
