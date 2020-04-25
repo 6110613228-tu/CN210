@@ -354,7 +354,17 @@ offset = 0000000000000100 (4)
 
 ในขั้นตอนนี้ ALU จะนำ A - B หาก A - B == 0 เป็นจริง PC ก็จะทำการ Jump ไปตาม Address ที่ ALUOUT ส่งไปให้ก่อนหน้า
 
-#### CLIP6
-พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งแบบ R-type [clip6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
+#### [CLIP6](https://drive.google.com/open?id=1GWHg1gYD5LIL0P6IzxH3C_XdkvpbKLST)
+
+พูดถึงสัญญาณที่ใช้ในการทำงานชุดคำสั่งชนิด R-type
+
+![comp-arch-2012-choompol-83](https://user-images.githubusercontent.com/61135042/80276745-dcb27500-8714-11ea-8107-c29924b3b26e.jpg)
+
+![comp-arch-2012-choompol-85](https://user-images.githubusercontent.com/61135042/80276753-e5a34680-8714-11ea-9ad7-2b54b4dad17f.jpg)
+
+![comp-arch-2012-choompol-87](https://user-images.githubusercontent.com/61135042/80276765-edfb8180-8714-11ea-94da-a65e88fd68c2.jpg)
+
+![comp-arch-2012-choompol-89](https://user-images.githubusercontent.com/61135042/80276770-f5228f80-8714-11ea-9f0a-da05eeb496d9.jpg)
+
 #### CLIP7
 ระบบคอมพิวเตอร์แบบ pipelining
