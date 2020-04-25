@@ -272,7 +272,6 @@ offset = 0000000000000100 (4)
 ความแตกต่างระหว่าง CPU แบบ Multi-cycle และ Single-cycle
 
 **CPU แบบ Single-Cycle**
-
 ![comp-arch-2012-choompol-49](https://user-images.githubusercontent.com/61135042/80242926-653b0200-8690-11ea-846a-03d1d3dcc801.jpg)
 1. Havard Architecture
 2. Mux 4 units
@@ -296,12 +295,14 @@ offset = 0000000000000100 (4)
 - IR = Memory[PC]
 - PC = PC + 4
 ![comp-arch-2012-choompol-60](https://user-images.githubusercontent.com/61135042/80243595-b5669400-8691-11ea-8735-fb508d84c4b9.jpg)
+เป็นการนำชุดคำสั่งมาเก็บไว้ที่ **IR(Instruction Register)** และนำ PC ไปบวก 4 เพื่อดึงชุดคำสั่งภัดไปมารอไว้ที่ PC
 
 ##### T2 : Instruction decode / register fetch
 - A= REG[IR[25-21]]
 - B = REG[IR[20-15]]
 - ALUOUT = PC + (sign-extend (IR[15-0] << 2))
 ![comp-arch-2012-choompol-61](https://user-images.githubusercontent.com/61135042/80243611-bf889280-8691-11ea-855f-2437c9c4cb7a.jpg)
+ในขั้นตอนนี้
 
 #### T3 : Execution , address computation , branch/jump completion
 - ALUOUT = A + sign-extend(IR[15-0])
