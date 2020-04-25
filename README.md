@@ -288,17 +288,32 @@ offset = 0000000000000100 (4)
 4. 1 Memory
 5. Each Instruction has it's own clock-cycle **ทุกคำสั่งไม่มีการเสียเวลาเกิดขึ้นเพราะใช้เวลาพอดี**
 
-#### CLIP4
-พูดถึงการทำงานของคำสั่ง lw [clip4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
+#### [CLIP4](https://drive.google.com/open?id=1MWs46dEnK21W6binPPvU7I_iTcDpInNu)
 
+พูดถึงขั้นตอนการทำงานของคำสั่ง lw
+
+##### T1 : Instruction fetch
+- IR = Memory[PC]
+- PC = PC + 4
 ![comp-arch-2012-choompol-60](https://user-images.githubusercontent.com/61135042/80243595-b5669400-8691-11ea-8735-fb508d84c4b9.jpg)
 
+##### T2 : Instruction decode / register fetch
+- A= REG[IR[25-21]]
+- B = REG[IR[20-15]]
+- ALUOUT = PC + (sign-extend (IR[15-0] << 2))
 ![comp-arch-2012-choompol-61](https://user-images.githubusercontent.com/61135042/80243611-bf889280-8691-11ea-855f-2437c9c4cb7a.jpg)
 
+#### T3 : Execution , address computation , branch/jump completion
+- ALUOUT = A + sign-extend(IR[15-0])
 ![comp-arch-2012-choompol-62](https://user-images.githubusercontent.com/61135042/80243639-c8796400-8691-11ea-9efa-788932c2fc09.jpg)
 
+#### T4 : Memory access or R-type completion
+- Load : MDR = Memory[ALUOUT] or
+- Store : Memory[ALUOUT] = B
 ![comp-arch-2012-choompol-63](https://user-images.githubusercontent.com/61135042/80243665-d16a3580-8691-11ea-82e3-543df6eb4e2a.jpg)
 
+#### T5 : Memoey read completion
+- Load : REG[IR[20-16]] = MDR
 ![comp-arch-2012-choompol-64](https://user-images.githubusercontent.com/61135042/80243679-daf39d80-8691-11ea-8275-9ae80da3ed87.jpg)
 
 #### CLIP5
