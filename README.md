@@ -87,6 +87,8 @@ Jump&Link  jal address
 
 #### ALU Decoder
 
+![comp-arch-2012-choompol-52](https://user-images.githubusercontent.com/61135042/80457109-f93eef00-8958-11ea-95ac-128fcab95db9.jpg)
+
 # ส่งการบ้าน
 
 ### [CLIP1](https://www.youtube.com/watch?v=RRHZPNz_lzE&feature=youtu.be)
