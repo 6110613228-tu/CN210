@@ -384,7 +384,7 @@ T3 ALUOUT = A op B control unit จึงทำการส่งสัญญา
 T4 ซึ่งเป็นขั้นตอนสุดท้ายเป็นการนำค่าที่ไดเจาก ALU ส่งออกไปเก็บที่ REG[IR[15-11]] จึงมีการส่งสัญญาณ REGWrite = 0 เพื่อให้เขียนข้อมูลจาก ALUOUT ลงไปใน REG MemtoReg = 0 เพื่อส่งค่า ALUOUT ออกมาและ RegDst = 1 เพื่อให้ Mux ส่งค่า %rd เข้าไปใน Reg
 ![comp-arch-2012-choompol-89](https://user-images.githubusercontent.com/61135042/80276770-f5228f80-8714-11ea-9f0a-da05eeb496d9.jpg)
 
-### CLIP7
+### [CLIP7](https://drive.google.com/file/d/1rVge7JQ1OvIBrxGjLfBbbd1n-iUDX3jr/view?usp=sharing)
 ระบบคอมพิวเตอร์แบบ pipelining เป็นเเนวคิดการใช้ทรัพยากรของคอมพิวเตอร์อย่างเต็มความสามารถ ทำให้คอมพิวเตอร์สามารถทำงานได้รวดเร็วยิ่งขึ้นได้
 หลักการทำงานสามารถแสดงได้ด้วยภาพด้านล่าง
 
